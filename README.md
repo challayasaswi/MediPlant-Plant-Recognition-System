@@ -51,16 +51,16 @@ streamlit run app.py
 📊 Output
 
 The system predicts:
-Disease Name
-Recommended Pesticides
-Benefits of Leaf
+Disease Name|
+Recommended Pesticides|
+Benefits of Leaf|
 Additional Information
 
 🔮 Future Enhancements
 
-Mobile Application Integration
-Multilingual Support
-Real-time Image Capture
+Mobile Application Integration|
+Multilingual Support|
+Real-time Image Capture|
 Advanced Disease Classification
 
 👩‍💻 Author
