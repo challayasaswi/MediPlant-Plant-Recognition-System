@@ -1,68 +1,122 @@
-🌿 MediPlant - Plant leaf disease detection & pesticide recommendation using CNN + Streamlit
+🌿 **MediPlant – Plant Leaf Disease Detection & Pesticide Recommendation System**
 
-MediPlant is a deep learning-based web application designed to detect plant leaf diseases and recommend suitable pesticides. The system uses Convolutional Neural Networks (CNN) to identify plant diseases from leaf images and provides useful information such as disease name, pesticide suggestions, and leaf benefits.
 
----
+📌 **Project Overview**
 
-## 🚀 Features
+MediPlant is a Deep Learning-based plant disease detection system that identifies leaf diseases using image classification and recommends suitable pesticides based on the predicted disease.
 
-- 🌱 Upload plant leaf image for disease detection
-- 🤖 CNN-based deep learning model for prediction
-- 🦠 Accurate disease identification
-- 💊 Pesticide recommendation based on disease
-- 📄 Displays additional leaf information
-- 🌐 Interactive web interface using Streamlit
-- ⚡ Real-time prediction results
+The system is designed to assist farmers and agricultural professionals by providing fast, accurate, and intelligent crop disease diagnosis.
 
-🛠 Tech Stack
+This project leverages Convolutional Neural Networks (CNN) for image classification and integrates pesticide recommendation data stored in an Excel file.
 
-### Frontend:
-- Streamlit
+🎯 **Problem Statement**
 
-### Backend:
-- Python
+Plant diseases significantly reduce agricultural productivity. Early detection and proper pesticide selection are critical to preventing crop loss.
 
-### Deep Learning:
-- TensorFlow
-- Keras
-- CNN (Convolutional Neural Network)
+**MediPlant aims to:**
 
-### Libraries Used:
-- NumPy
-- Pandas
-- Matplotlib
-- Pillow
-- OpenCV
+Detect plant leaf diseases using image input
 
-⚙️ Installation & Setup
+Provide pesticide recommendations
 
-1️⃣ Clone the Repository
-git clone https://github.com/challayasaswi/MediPlant-Plant-Recognition-System.git
+Assist in faster agricultural decision-making
 
-2️⃣ Navigate to Project Folder
-cd MediPlant-Plant-Recognition-System
+🚀 **Key Features**
 
-3️⃣ Install Dependencies
-pip install -r requirements.txt
+🌿 Leaf image-based disease detection
 
-4️⃣ Run the Application
-streamlit run app.py
+🤖 CNN-based deep learning model
 
-📊 Output
+📊 Model training and testing using Jupyter Notebooks
 
-The system predicts:
-Disease Name|
-Recommended Pesticides|
-Benefits of Leaf|
-Additional Information
+💊 Pesticide recommendation system (Excel-based dataset)
 
-🔮 Future Enhancements
+🖼️ Simple user interface using Python
 
-Mobile Application Integration|
-Multilingual Support|
-Real-time Image Capture|
-Advanced Disease Classification
+🛠️ **Tech Stack**
+Category	Technology
+Programming Language	Python
+Deep Learning	TensorFlow / Keras
+Model Type	Convolutional Neural Network (CNN)
+Data Handling	Pandas
+Dataset	Plant leaf disease image dataset
+UI	Python-based interface
+Data Storage	Excel (pest.xlsx)
 
-👩‍💻 Author
+
+🧠 **System Workflow**
+
+Collect plant leaf image dataset.
+
+Train CNN model using Train_plant_disease.ipynb.
+
+Validate model using Test_plant_disease.ipynb.
+
+Load trained model in main.py.
+
+User provides leaf image input.
+
+System predicts disease.
+
+Based on prediction, pesticide recommendation is fetched from pest.xlsx.
+
+Final result is displayed to the user.
+
+📂 **Project Structure**
+MediPlant-Plant-Recognition-System/
+│
+├── Train_plant_disease.ipynb   # Model training
+├── Test_plant_disease.ipynb    # Model testing
+├── main.py                     # Application entry point
+├── pest.xlsx                   # Pesticide recommendation data
+├── background.jpg              # UI background image
+├── home_page.jpeg              # Home screen image
+└── README.md
+
+
+
+📊 **Model Details**
+
+Architecture: Convolutional Neural Network (CNN)
+
+Image Preprocessing: Resizing & normalization
+
+Loss Function: Categorical Crossentropy
+
+Optimizer: Adam
+
+Evaluation Metrics: Accuracy
+
+📈 **Results**
+
+Achieved high classification accuracy on validation dataset.
+
+Successfully mapped predicted diseases to relevant pesticide recommendations.
+
+Reduced manual effort in disease identification.
+
+🌟 **Project Highlights**
+
+Real-world agriculture problem solving
+
+Deep learning model implementation
+
+End-to-end pipeline (Training → Testing → Deployment)
+
+Data-driven pesticide recommendation system
+
+🔮 **Future Enhancements**
+
+🌍 Web-based deployment (Streamlit / Flask)
+
+📱 Mobile application integration
+
+📊 Real-time camera-based detection
+
+🧠 Improved accuracy with larger dataset
+
+☁️ Cloud deployment (AWS / Azure)
+
+👩‍💻 **Developed By**
 
 Yasaswi Challa
